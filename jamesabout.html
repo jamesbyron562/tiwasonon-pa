@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lora:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        /* General Body and Font Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #111, #444);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(135deg, #ff3b3b, #5b3cc4);
+            padding: 60px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        
+        header h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 4rem;
+            color: #fff;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            color: #eee;
+            margin-top: 10px;
+        }
+
+        /* Main Content Section */
+        .main-content {
+            padding: 80px 50px;
+            text-align: center;
+            background: #222;
+            min-height: 100vh;
+        }
+
+        h2 {
+            font-family: 'Lora', serif;
+            color: #ff3b3b;
+            font-size: 3rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .achievements {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .achievement {
+            background-color: #333;
+            padding: 25px;
+            border-radius: 15px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .achievement h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            color: #ff3b3b;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .achievement p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .achievement:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Buttons and Links Styling */
+        .button {
+            display: inline-block;
+            background: #ff3b3b;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #080000;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #232323;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        footer a {
+            color: #ff3b3b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 30px;
+            }
+
+            .main-content {
+                padding: 50px 20px;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            .achievements {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .achievement {
+                width: 90%;
+            }
+        }
+
+        /* Button Styling for Header */
+        .header-button {
+            display: inline-block;
+            background: #ff7300;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 20px; /* Adjust spacing from the text */
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .header-button:hover {
+            background: #4a2c9b;
+            transform: translateY(-5px);
+        }
+
+        img {
+            height: 50px;
+            width: 50px;
+            padding: 15px;
+        }
+
+        .BOOK {
+            height: 100px;
+            width: 70px;
+            margin-left: 48px;
+            margin-bottom: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .BOOK1 {
+            height: 150px;
+            width: 150px;
+        }
+
+        .achievement:hover{
+            transform: scale(1.2);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My personal website</h1>
+        <p>Achievements, Progress, Personal information, and Proofs</p>
+    </header>
+    
+    <a href="james.html" class="header-button">Return</a> <!-- Added Button -->
+    
+    <div class="main-content">
+        <h2>I am James Byron L. Geloca</h2>
+        <div class="achievements">
+            <div class="achievement">
+                <h3>Details about me</h3>
+                <p>Age: 18 years old</p>
+                <p>Religion: Roman Catholic</p>
+                <p><Address>Address: Tuyom, Carcar City, Cebu</Address></p>
+                <p>Favorite Food: Pizza, Sinigang</p>
+                <p>Languages spoken: English, Filipino, Cebuano</p>
+                <p>Education: Currently enrolled in University of Cebu, stuying Information Technology</p>
+                <p class="BOOK"><img src="./GIF/GIF1.gif" alt="" class="BOOK1"></p>
+            </div>
+            <div class="achievement">
+                <h3>Hobbies & Interests</h3>
+                <p>Playing video games</p>
+                <p>I like reading books</p>
+                <p>Watching movies</p>
+                <p>I love listening to music</p>
+            </div>
+            <div class="achievement">
+                <h3>Tournament Winner</h3>
+                <p>Won 3rd place in a Mayor's cup Valorant tournament</p>
+                <p>Got immortal 3 rank!</p>
+                <p><img src="./GIF/IMMO.gif" alt=""></p>
+            </div>
+            <div class="achievement">
+                <h3>Contact Information</h3>
+                <a href="https://www.facebook.com/Byron.pinakamalupet"><img src="./image/FB1.jpg" alt="FB"></a><br>
+                <a href="https://www.instagram.com/ambotaniahahahha/"><img src="./image/IGS.jpg" alt="IG"></a><br>
+                <a href="https://www.tiktok.com/@ahhshebal"><img src="./image/TIKS.jpg" alt="TT"></a>
+            </div>
+        </div>
+        <a href="https://tracker.gg/valorant/profile/riot/widi%23frfr/overview" class="button">Check out my Valorant profile    :))</a>    
+        <a href="https://www.facebook.com/Byron.pinakamalupet" class="button" style="margin: 20px;">Visit my Facebook</a> 
+    </div>
+
+    <!-- Copyright Footer -->
+    <footer>
+        <p>&copy; 2024 James Byron L. Geloca. All rights reserved. | <a href="https://jamesbyron562.github.io/html---project/">My other webiste</a></p>
+    </footer>
+</body>
+</html>

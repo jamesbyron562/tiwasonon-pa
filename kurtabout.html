@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurt Ruelo Personal Website</title>
+    <style>
+        /* General Body and Font Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #111, #444);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(135deg, #ff3b3b, #5b3cc4);
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        
+        header h1 {
+            font-size: 4rem;
+            color: #fff;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            color: #eee;
+            margin-top: 10px;
+        }
+
+        /* Main Content Section */
+        .main-content {
+            padding: 80px 50px;
+            text-align: center;
+            background: #222;
+            min-height: 100vh;
+        }
+
+        h2 {
+            color: #ff3b3b;
+            font-size: 3rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .achievements {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .achievement {
+            background-color: #333;
+            padding: 70px;
+            border-radius: 15px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .achievement h3 {
+            color: #ff3b3b;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .achievement p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .achievement:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Buttons and Links Styling */
+        .button {
+            display: inline-block;
+            background: #ff3b3b;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #080000;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #232323;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            margin-bottom: -250px;
+        }
+
+        footer p {
+            color: #fff;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 30px;
+            }
+
+            .main-content {
+                padding: 50px 20px;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            .achievements {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .achievement {
+                width: 90%;
+            }
+        }
+        
+
+        /* Button Styling for Header */
+    .header-button {
+    display: inline-block;
+    background: #ff7300;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 20px; /* Adjust spacing from the text */
+    transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .header-button:hover {
+    background: #4a2c9b;
+    transform: translateY(-5px);
+    }
+    img
+    {
+        width: 50px;
+        height: 50px;
+        padding: 3%;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Profile</h1>
+        <p>COME AND FIND OUT MY ALL ABOUTS</p>
+    </header>
+    
+        <a href="kurt.html" class="header-button">Return</a> <!-- Added Button -->
+    
+    
+    
+    <div class="main-content">
+        <h2>My Achievements</h2>
+        <div class="achievements">
+            <div class="achievement">
+                <h3>INFO</h3>
+                <p style="font-size: 140%;"> - Kurt Daven Ruelo <br>
+                 - 170.18 cm / 5' 7" <br>
+                 - April 13, 2005 / 19 yrs old <br>
+                - Brown Eyes <br>
+                - Curly Hair / Dry Hair <br>
+                - 2nd eldest / Only Bro of 4 Sis <br>
+                - Capiton Residence Barangay Kamputhaw C.C <br>
+                - In-Relationship w/ Heart Capangpangan <br>
+                - Chill type
+            </p>
+            </div>
+            <div class="achievement">
+                <h3>FUN FACTS</h3>
+                <p style="font-size: 140%;">- I love cleaning a messy house <br>
+                 - Night Person <br>
+                 - I love cramming <br>
+                 - Indoor type unless its my gf to hangout with <br>
+                  </p>
+            </div>
+            <div class="achievement">
+                <h3>HOBBIES</h3>
+                <p style="font-size: 140%;"> - Basketball <br>
+                    - Staring at the phone <br>
+                    - Outdoor Activities such as hanging out with my friends, girlfriend , fam etc. <br>
+                    - Sleep
+                   </p>
+            </div>
+            <div class="achievement">
+                <h3>CONTACTS</h3>
+                <a href="https://www.instagram.com/kuarttii/" class="ig">
+                    <img src="/ig.png" alt="ig">
+                </a>
+                <a href="https://www.facebook.com/kuuurrttt13">
+                    <img src="/fb.png" alt="fb">
+                </a>
+                <a href="https://www.tiktok.com/@kuartie?_t=ZS-8sFyFg6NjoG&_r=1">
+                    <img src="tt.png" alt="tt">
+                </a>
+            </div>
+        </div>
+        <a href="https://www.facebook.com/kuuurrttt13" class="button">Click for more info </a>    
+            <br>
+            <a href="https://www.youtube.com/watch?v=b117a8_jALE" class="button">Check out my Highlights</a> 
+        </div>
+    <footer>
+        <p>&copy; 2024 Kurt Ruelo.</p>
+    </footer>
+</body>
+</html>
